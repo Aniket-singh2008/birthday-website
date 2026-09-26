@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="100%" height="100%">
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Background: Cozy warm cream/beige -->
+  <rect width="1000" height="1500" fill="#FBF5EA" />
+
+  <!-- ========================================== -->
+  <!-- 1. DOODLES & AMBIENT DECORATIONS           -->
+  <!-- ========================================== -->
+
+  <!-- Top-Left Sparkle Stars -->
+  <!-- Large Yellow Sparkle Star (✦) -->
+  <path d="M 88 44 C 88 62 106 80 124 80 C 106 80 88 98 88 116 C 88 98 70 80 52 80 C 70 80 88 62 88 44 Z" fill="#FBBF24" />
+  <!-- Small Yellow Sparkle Star (✦) -->
+  <path d="M 64 150 C 64 160 74 170 84 170 C 74 170 64 180 64 190 C 64 180 54 170 44 170 C 54 170 64 160 64 150 Z" fill="#FDE047" />
+  <!-- Top-Left Hatch Marks (\ \) -->
+  <line x1="96" y1="355" x2="118" y2="385" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="126" y1="335" x2="148" y2="365" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Top-Right Doodles -->
+  <!-- Pink Heart Outline (♡) -->
+  <path d="M 868 132 C 868 95, 825 80, 808 108 C 790 80, 748 95, 748 132 C 748 178, 808 212, 808 212 C 808 212, 868 178, 868 132 Z"
+        fill="none" stroke="#FB7185" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-15 808 140)" />
+  <!-- Top-Right Hatch Marks (\ \) -->
+  <line x1="910" y1="120" x2="938" y2="120" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="912" y1="145" x2="940" y2="135" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <!-- Upper-Right Hatch Marks (\ \) -->
+  <line x1="905" y1="305" x2="938" y2="320" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="905" y1="345" x2="938" y2="360" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Left Side Doodles beside center box -->
+  <!-- Filled Pink Heart (♥) -->
+  <path d="M 94 610 C 94 590, 72 580, 64 595 C 55 580, 34 590, 34 610 C 34 635, 64 655, 64 655 C 64 655, 94 635, 94 610 Z"
+        fill="#F472B6" transform="rotate(-12 64 610)" />
+  <!-- Hatch Marks (//) -->
+  <line x1="68" y1="750" x2="94" y2="738" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="68" y1="790" x2="94" y2="778" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <!-- Sparkle Star (✦) -->
+  <path d="M 68 895 C 68 910 82 924 96 924 C 82 924 68 938 68 952 C 68 938 54 924 40 924 C 54 924 68 910 68 895 Z" fill="#FBBF24" />
+
+  <!-- Right Side Doodles beside center box -->
+  <!-- Sparkle Star (✦) -->
+  <path d="M 932 605 C 932 620 946 634 960 634 C 946 634 932 648 932 662 C 932 648 918 634 904 634 C 918 634 932 620 932 605 Z" fill="#FBBF24" />
+  <!-- Hatch Marks (\\) -->
+  <line x1="915" y1="705" x2="892" y2="738" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="945" y1="745" x2="922" y2="778" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <!-- Filled Pink Heart (♥) -->
+  <path d="M 948 845 C 948 825, 926 815, 918 830 C 909 815, 888 825, 888 845 C 888 870, 918 890, 918 890 C 918 890, 948 870, 948 845 Z"
+        fill="#F472B6" transform="rotate(15 918 845)" />
+
+  <!-- Bottom Doodles -->
+  <!-- Left of Bunny Hatch Marks (//) -->
+  <line x1="102" y1="1160" x2="128" y2="1148" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="88" y1="1195" x2="114" y2="1183" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Floating Heart between Bunny and Bear (♥) -->
+  <path d="M 364 1098 C 364 1080, 345 1072, 338 1085 C 330 1072, 312 1080, 312 1098 C 312 1120, 338 1138, 338 1138 C 338 1138, 364 1120, 364 1098 Z"
+        fill="#F472B6" transform="rotate(20 338 1105)" />
+
+  <!-- Right of Bear Doodles -->
+  <line x1="635" y1="1140" x2="620" y2="1165" stroke="#1E1E1E" stroke-width="4.2" stroke-linecap="round" />
+  <line x1="602" y1="1160" x2="588" y2="1185" stroke="#1E1E1E" stroke-width="4.2" stroke-linecap="round" />
+
+  <!-- Spiral Curl Beside Bear -->
+  <path d="M 885 1120 m -2 0 a 3 3 0 1 0 6 0 a 8 8 0 1 0 -16 0 a 14 14 0 1 0 28 0 a 20 20 0 1 0 -40 0"
+        fill="none" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" />
+  <line x1="885" y1="1215" x2="925" y2="1215" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- ========================================== -->
+  <!-- 2. TOP SPEECH BUBBLE (LAVENDER CLOUD)      -->
+  <!-- ========================================== -->
+  <g filter="url(#softShadow)">
+    <path
+      d="M 170 180
+         Q 235 125 330 148
+         Q 425 105 530 135
+         Q 635 108 720 150
+         Q 815 115 860 210
+         Q 895 295 850 365
+         Q 885 415 815 440
+         Q 710 465 605 435
+         Q 490 472 385 438
+         Q 275 468 185 418
+         Q 95 365 125 285
+         Q 90 205 170 180 Z"
+      fill="#ECE5FF"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+    <!-- Text inside Speech Bubble -->
+    <text x="500" y="240" font-family="'Patrick Hand', 'Fredoka', sans-serif" font-weight="bold" font-size="54" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      Hey, I made something
+    </text>
+    <text x="500" y="315" font-family="'Patrick Hand', 'Fredoka', sans-serif" font-weight="bold" font-size="54" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      for you. Do you wanna
+    </text>
+    <text x="500" y="390" font-family="'Patrick Hand', 'Fredoka', sans-serif" font-weight="bold" font-size="54" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      see it?
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 3. CENTER BLANK BOX FRAME                  -->
+  <!-- ========================================== -->
+  <!-- Outer Hand-drawn Black Frame -->
+  <rect
+    x="128"
+    y="480"
+    width="744"
+    height="535"
+    rx="36"
+    ry="36"
+    fill="#FFFFFF"
+    stroke="#1E1E1E"
+    stroke-width="5.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- ========================================== -->
+  <!-- 4. BOTTOM CHARACTERS & BUTTONS             -->
+  <!-- ========================================== -->
+
+  <!-- LEFT: CUTE WHITE BUNNY -->
+  <g id="bunnyGroup">
+    <!-- Left Bunny Ear -->
+    <path d="M 195 1100 C 180 1055, 175 1010, 195 1000 C 215 990, 222 1045, 218 1100 Z"
+          fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.8" stroke-linejoin="round" />
+    <path d="M 196 1085 C 188 1055, 185 1025, 196 1018 C 206 1010, 210 1045, 208 1085 Z" fill="#FDA4AF" />
+
+    <!-- Right Bunny Ear -->
+    <path d="M 245 1100 C 240 1045, 245 995, 265 1000 C 285 1005, 280 1055, 268 1100 Z"
+          fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.8" stroke-linejoin="round" />
+    <path d="M 250 1085 C 248 1045, 252 1015, 262 1018 C 272 1022, 268 1055, 262 1085 Z" fill="#FDA4AF" />
+
+    <!-- Bunny Head -->
+    <path d="M 165 1130 C 160 1085, 195 1065, 232 1065 C 270 1065, 305 1085, 300 1130 C 305 1165, 285 1185, 232 1185 C 180 1185, 160 1165, 165 1130 Z"
+          fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.8" stroke-linejoin="round" />
+
+    <!-- Bunny Eyes -->
+    <circle cx="208" cy="1125" r="5.5" fill="#1E1E1E" />
+    <circle cx="258" cy="1125" r="5.5" fill="#1E1E1E" />
+
+    <!-- Bunny Cheeks -->
+    <ellipse cx="192" cy="1142" rx="9" ry="6" fill="#FB7185" opacity="0.85" />
+    <ellipse cx="272" cy="1142" rx="9" ry="6" fill="#FB7185" opacity="0.85" />
+
+    <!-- Bunny Mouth -->
+    <path d="M 226 1140 Q 233 1150 240 1140" fill="#F43F5E" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- Bunny Paws -->
+    <ellipse cx="196" cy="1178" rx="14" ry="10" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.2" />
+    <ellipse cx="270" cy="1178" rx="14" ry="10" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.2" />
+  </g>
+
+  <!-- RIGHT: CUTE BROWN BEAR -->
+  <g id="bearGroup">
+    <!-- Bear Left Round Ear -->
+    <circle cx="704" cy="1088" r="26" fill="#BA8759" stroke="#1E1E1E" stroke-width="4.8" />
+    <circle cx="704" cy="1088" r="14" fill="#8D5B36" />
+
+    <!-- Bear Right Round Ear -->
+    <circle cx="802" cy="1088" r="26" fill="#BA8759" stroke="#1E1E1E" stroke-width="4.8" />
+    <circle cx="802" cy="1088" r="14" fill="#8D5B36" />
+
+    <!-- Bear Head -->
+    <path d="M 678 1135 C 670 1090, 710 1070, 754 1070 C 800 1070, 838 1090, 830 1135 C 835 1170, 815 1188, 754 1188 C 695 1188, 672 1170, 678 1135 Z"
+          fill="#BA8759" stroke="#1E1E1E" stroke-width="4.8" stroke-linejoin="round" />
+
+    <!-- Bear Muzzle/Snout -->
+    <ellipse cx="754" cy="1152" rx="24" ry="16" fill="#F3DFC8" stroke="#1E1E1E" stroke-width="3.5" />
+    <!-- Bear Nose -->
+    <path d="M 748 1145 L 760 1145 Q 754 1152 748 1145 Z" fill="#1E1E1E" />
+    <path d="M 754 1149 L 754 1158" stroke="#1E1E1E" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Bear Eyes -->
+    <circle cx="725" cy="1126" r="5.5" fill="#1E1E1E" />
+    <circle cx="783" cy="1126" r="5.5" fill="#1E1E1E" />
+
+    <!-- Bear Cheeks -->
+    <ellipse cx="706" cy="1144" rx="9" ry="6" fill="#FB7185" opacity="0.85" />
+    <ellipse cx="802" cy="1144" rx="9" ry="6" fill="#FB7185" opacity="0.85" />
+
+    <!-- Bear Paws -->
+    <ellipse cx="715" cy="1178" rx="14" ry="10" fill="#BA8759" stroke="#1E1E1E" stroke-width="4.2" />
+    <ellipse cx="792" cy="1178" rx="14" ry="10" fill="#BA8759" stroke="#1E1E1E" stroke-width="4.2" />
+  </g>
+
+  <!-- PINK "YES" BUTTON -->
+  <g id="yesButtonGraphics">
+    <rect
+      x="102"
+      y="1170"
+      width="376"
+      height="120"
+      rx="60"
+      ry="60"
+      fill="#FFAEC0"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+    />
+    <text x="290" y="1248" font-family="'Patrick Hand', 'Fredoka', sans-serif" font-weight="bold" font-size="64" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      Yes
+    </text>
+  </g>
+
+  <!-- BLUE/LAVENDER "NO" BUTTON -->
+  <g id="noButtonGraphics">
+    <rect
+      x="526"
+      y="1170"
+      width="376"
+      height="120"
+      rx="60"
+      ry="60"
+      fill="#B9C6FF"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+    />
+    <text x="714" y="1248" font-family="'Patrick Hand', 'Fredoka', sans-serif" font-weight="bold" font-size="64" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      No
+    </text>
+  </g>
+</svg>

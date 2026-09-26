@@ -1,0 +1,353 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="100%" height="100%">
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.06" />
+    </filter>
+    <filter id="stickerShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.14" />
+    </filter>
+  </defs>
+
+  <!-- Background: Cozy warm cream/beige -->
+  <rect width="1000" height="1500" fill="#FBF5EA" />
+
+  <!-- ========================================== -->
+  <!-- 1. DOODLES & AMBIENT DECORATIONS           -->
+  <!-- ========================================== -->
+
+  <!-- Top-Left Sparkle Stars -->
+  <path d="M 88 44 C 88 62 106 80 124 80 C 106 80 88 98 88 116 C 88 98 70 80 52 80 C 70 80 88 62 88 44 Z" fill="#FBBF24" />
+  <path d="M 64 150 C 64 160 74 170 84 170 C 74 170 64 180 64 190 C 64 180 54 170 44 170 C 54 170 64 160 64 150 Z" fill="#FDE047" />
+  <!-- Top-Left Hatch Marks (\ \) -->
+  <line x1="96" y1="355" x2="118" y2="385" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="126" y1="335" x2="148" y2="365" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Top-Right Doodles -->
+  <!-- Pink Heart Outline (♡) -->
+  <path d="M 868 132 C 868 95, 825 80, 808 108 C 790 80, 748 95, 748 132 C 748 178, 808 212, 808 212 C 808 212, 868 178, 868 132 Z"
+        fill="none" stroke="#FB7185" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-15 808 140)" />
+  <!-- Top-Right Hatch Marks (\ \) -->
+  <line x1="910" y1="120" x2="938" y2="120" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="912" y1="145" x2="940" y2="135" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="905" y1="305" x2="938" y2="320" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="905" y1="345" x2="938" y2="360" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Left Side Doodles beside center box -->
+  <path d="M 94 610 C 94 590, 72 580, 64 595 C 55 580, 34 590, 34 610 C 34 635, 64 655, 64 655 C 64 655, 94 635, 94 610 Z"
+        fill="#F472B6" transform="rotate(-12 64 610)" />
+  <line x1="68" y1="750" x2="94" y2="738" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="68" y1="790" x2="94" y2="778" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 68 895 C 68 910 82 924 96 924 C 82 924 68 938 68 952 C 68 938 54 924 40 924 C 54 924 68 910 68 895 Z" fill="#FBBF24" />
+
+  <!-- Right Side Doodles beside center box -->
+  <path d="M 932 605 C 932 620 946 634 960 634 C 946 634 932 648 932 662 C 932 648 918 634 904 634 C 918 634 932 620 932 605 Z" fill="#FBBF24" />
+  <line x1="915" y1="705" x2="892" y2="738" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="945" y1="745" x2="922" y2="778" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 948 845 C 948 825, 926 815, 918 830 C 909 815, 888 825, 888 845 C 888 870, 918 890, 918 890 C 918 890, 948 870, 948 845 Z"
+        fill="#F472B6" transform="rotate(15 918 845)" />
+
+  <!-- Bottom Doodles beside buttons -->
+  <line x1="102" y1="1160" x2="128" y2="1148" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="88" y1="1195" x2="114" y2="1183" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 364 1098 C 364 1080, 345 1072, 338 1085 C 330 1072, 312 1080, 312 1098 C 312 1120, 338 1138, 338 1138 C 338 1138, 364 1120, 364 1098 Z"
+        fill="#F472B6" transform="rotate(20 338 1105)" />
+  <line x1="635" y1="1140" x2="620" y2="1165" stroke="#1E1E1E" stroke-width="4.2" stroke-linecap="round" />
+  <line x1="602" y1="1160" x2="588" y2="1185" stroke="#1E1E1E" stroke-width="4.2" stroke-linecap="round" />
+  <path d="M 885 1120 m -2 0 a 3 3 0 1 0 6 0 a 8 8 0 1 0 -16 0 a 14 14 0 1 0 28 0 a 20 20 0 1 0 -40 0"
+        fill="none" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" />
+  <line x1="885" y1="1215" x2="925" y2="1215" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- ========================================== -->
+  <!-- 2. TOP SPEECH BUBBLE (LAVENDER CLOUD)      -->
+  <!-- ========================================== -->
+  <g filter="url(#softShadow)">
+    <path
+      d="M 170 180
+         Q 235 125 330 148
+         Q 425 105 530 135
+         Q 635 108 720 150
+         Q 815 115 860 210
+         Q 895 295 850 365
+         Q 885 415 815 440
+         Q 710 465 605 435
+         Q 490 472 385 438
+         Q 275 468 185 418
+         Q 95 365 125 285
+         Q 90 205 170 180 Z"
+      fill="#ECE5FF"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+    <!-- Text inside Speech Bubble -->
+    <text x="500" y="240" font-family="'Patrick Hand', 'Fredoka', 'Comic Sans MS', cursive, sans-serif" font-weight="bold" font-size="54" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      Hey, I made something
+    </text>
+    <text x="500" y="315" font-family="'Patrick Hand', 'Fredoka', 'Comic Sans MS', cursive, sans-serif" font-weight="bold" font-size="54" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      for you. Do you wanna
+    </text>
+    <text x="500" y="390" font-family="'Patrick Hand', 'Fredoka', 'Comic Sans MS', cursive, sans-serif" font-weight="bold" font-size="54" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      see it?
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 3. CENTER BOX WITH SHINCHAN STICKER        -->
+  <!-- ========================================== -->
+  <!-- Outer Hand-drawn Black Frame -->
+  <rect
+    x="128"
+    y="480"
+    width="744"
+    height="535"
+    rx="36"
+    ry="36"
+    fill="#FFFFFF"
+    stroke="#1E1E1E"
+    stroke-width="5.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Doodles Inside Center Box around Shinchan -->
+  <path d="M 285 540 C 285 554 298 566 312 566 C 298 566 285 578 285 592 C 285 578 272 566 258 566 C 272 566 285 554 285 540 Z" fill="#FBBF24" />
+  <path d="M 230 580 C 230 586 236 592 242 592 C 236 592 230 598 230 604 C 230 598 224 592 218 592 C 224 592 230 586 230 580 Z" fill="#FDE047" />
+  <path d="M 250 640 C 250 650 260 660 270 660 C 260 660 250 670 250 680 C 250 670 240 660 230 660 C 240 660 250 650 250 640 Z" fill="#FBBF24" />
+  <circle cx="288" cy="670" r="4" fill="#FDE047" />
+  <path d="M 280 760 C 280 745, 264 738, 258 748 C 252 738, 236 745, 236 760 C 236 776, 258 790, 258 790 C 258 790, 280 776, 280 760 Z" fill="#F472B6" />
+  <line x1="345" y1="810" x2="370" y2="825" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="342" y1="835" x2="368" y2="850" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 726 605 C 726 618 737 628 750 628 C 737 628 726 638 726 651 C 726 638 715 628 702 628 C 715 628 726 618 726 605 Z" fill="#FBBF24" />
+  <line x1="730" y1="700" x2="710" y2="725" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="745" y1="720" x2="725" y2="745" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 730 800 C 730 785, 714 778, 708 788 C 702 778, 686 785, 686 800 C 686 816, 708 830, 708 830 C 708 830, 730 816, 730 800 Z" fill="#F472B6" />
+
+  <!-- SHINCHAN SHY STICKER (Centered at x=500, y=745) -->
+  <g id="shinchanShySticker" filter="url(#stickerShadow)" transform="translate(0, 0)">
+    <!-- White Die-Cut Sticker Outline -->
+    <path
+      d="M 405 570
+         C 435 525, 545 520, 600 565
+         C 635 595, 655 640, 650 680
+         C 675 700, 670 745, 635 770
+         C 645 810, 640 850, 615 885
+         C 610 930, 580 965, 570 965
+         C 555 965, 555 925, 545 920
+         C 535 920, 530 965, 510 965
+         C 495 965, 490 920, 475 920
+         C 440 920, 420 895, 410 855
+         C 380 840, 360 805, 365 765
+         C 335 735, 335 675, 375 625
+         C 385 595, 395 580, 405 570 Z"
+      fill="#FFFFFF"
+      stroke="#FFFFFF"
+      stroke-width="24"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+
+    <!-- Shinchan Legs & Shoes -->
+    <!-- Left Leg & Shoe -->
+    <path d="M 465 890 L 468 945 L 488 945 L 488 890 Z" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+    <path d="M 464 938 L 464 955 C 464 960, 492 960, 492 955 L 492 938 Z" fill="#FACC15" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+    <!-- Right Leg & Shoe -->
+    <path d="M 525 890 L 528 945 L 548 945 L 548 890 Z" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+    <path d="M 524 938 L 524 955 C 524 960, 552 960, 552 955 L 552 938 Z" fill="#FACC15" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+
+    <!-- Shinchan Yellow Ruffled Shorts -->
+    <path
+      d="M 425 835
+         Q 460 850 510 840
+         Q 560 850 595 830
+         L 590 880
+         Q 565 898 540 882
+         Q 510 898 480 882
+         Q 450 898 425 880 Z"
+      fill="#FDE047"
+      stroke="#1E1E1E"
+      stroke-width="5"
+      stroke-linejoin="round"
+    />
+
+    <!-- Shinchan Red Sweater / Shirt (Shy Pose with Arms in Front) -->
+    <path
+      d="M 420 735
+         C 400 755, 385 790, 415 825
+         C 435 845, 575 845, 595 825
+         C 625 790, 610 755, 590 735
+         C 570 750, 440 750, 420 735 Z"
+      fill="#E11D48"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+      stroke-linejoin="round"
+    />
+    <!-- Arms Clasping In Front -->
+    <path
+      d="M 435 750
+         C 430 780, 450 810, 490 810
+         C 530 810, 560 785, 575 750"
+      fill="none"
+      stroke="#1E1E1E"
+      stroke-width="5"
+      stroke-linecap="round"
+    />
+    <!-- Hands Tucked In -->
+    <ellipse cx="490" cy="792" rx="18" ry="14" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="4.5" />
+    <path d="M 488 782 Q 498 792 488 802" fill="none" stroke="#1E1E1E" stroke-width="3.5" />
+
+    <!-- Shinchan Head Profile -->
+    <g id="shinchanHead">
+      <!-- Hair Base -->
+      <path
+        d="M 405 650
+           C 395 590, 440 540, 520 540
+           C 590 540, 630 580, 620 645
+           C 610 680, 580 690, 565 675
+           C 530 670, 425 670, 405 650 Z"
+        fill="#1E1E1E"
+        stroke="#1E1E1E"
+        stroke-width="5.5"
+        stroke-linejoin="round"
+      />
+
+      <!-- Chubby Face Profile -->
+      <path
+        d="M 400 645
+           C 345 660, 335 720, 375 765
+           C 415 805, 480 810, 525 790
+           C 585 780, 625 745, 620 695
+           C 618 660, 595 640, 575 645
+           C 545 635, 430 635, 400 645 Z"
+        fill="#FDC9AF"
+        stroke="#1E1E1E"
+        stroke-width="5.5"
+        stroke-linejoin="round"
+      />
+
+      <!-- Big Chubby Left Cheek Highlight -->
+      <path
+        d="M 345 710
+           C 345 675, 385 660, 415 675
+           C 435 690, 435 740, 405 760
+           C 375 780, 345 750, 345 710 Z"
+        fill="#FDC9AF"
+      />
+
+      <!-- Ear on Right -->
+      <path d="M 600 680 C 625 680, 625 715, 600 715" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+      <path d="M 602 690 Q 612 698 602 705" fill="none" stroke="#1E1E1E" stroke-width="3.5" />
+
+      <!-- Big Bold Iconic Shinchan Eyebrows -->
+      <!-- Left Eyebrow -->
+      <path d="M 400 630 Q 440 605 480 625" fill="none" stroke="#1E1E1E" stroke-width="16" stroke-linecap="round" />
+      <!-- Right Eyebrow -->
+      <path d="M 500 625 Q 540 605 580 630" fill="none" stroke="#1E1E1E" stroke-width="16" stroke-linecap="round" />
+
+      <!-- Big Adorable Anime Sparkling Eyes -->
+      <!-- Left Eye -->
+      <ellipse cx="445" cy="672" rx="26" ry="34" fill="#1E1E1E" />
+      <circle cx="438" cy="660" r="11" fill="#FFFFFF" />
+      <circle cx="456" cy="684" r="6" fill="#FFFFFF" />
+
+      <!-- Right Eye -->
+      <ellipse cx="528" cy="672" rx="26" ry="34" fill="#1E1E1E" />
+      <circle cx="521" cy="660" r="11" fill="#FFFFFF" />
+      <circle cx="539" cy="684" r="6" fill="#FFFFFF" />
+
+      <!-- Cute Blushing Cheeks with Hatch Lines -->
+      <ellipse cx="380" cy="735" rx="22" ry="14" fill="#FB7185" opacity="0.8" />
+      <line x1="368" y1="728" x2="378" y2="742" stroke="#E11D48" stroke-width="3" stroke-linecap="round" />
+      <line x1="380" y1="728" x2="390" y2="742" stroke="#E11D48" stroke-width="3" stroke-linecap="round" />
+      <line x1="392" y1="728" x2="402" y2="742" stroke="#E11D48" stroke-width="3" stroke-linecap="round" />
+
+      <ellipse cx="560" cy="735" rx="20" ry="13" fill="#FB7185" opacity="0.8" />
+      <line x1="550" y1="728" x2="560" y2="742" stroke="#E11D48" stroke-width="3" stroke-linecap="round" />
+      <line x1="562" y1="728" x2="572" y2="742" stroke="#E11D48" stroke-width="3" stroke-linecap="round" />
+
+      <!-- Cute Peach Nose -->
+      <path d="M 480 710 Q 486 715 480 720" fill="none" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+
+      <!-- Shy Open Mouth -->
+      <ellipse cx="484" cy="742" rx="10" ry="14" fill="#881337" stroke="#1E1E1E" stroke-width="3.5" />
+      <path d="M 478 748 Q 484 742 490 748" fill="#FDA4AF" />
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 4. BOTTOM CHARACTERS & BUTTONS             -->
+  <!-- ========================================== -->
+
+  <!-- LEFT: CUTE WHITE BUNNY -->
+  <g id="bunnyGroup">
+    <path d="M 195 1100 C 180 1055, 175 1010, 195 1000 C 215 990, 222 1045, 218 1100 Z"
+          fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.8" stroke-linejoin="round" />
+    <path d="M 196 1085 C 188 1055, 185 1025, 196 1018 C 206 1010, 210 1045, 208 1085 Z" fill="#FDA4AF" />
+    <path d="M 245 1100 C 240 1045, 245 995, 265 1000 C 285 1005, 280 1055, 268 1100 Z"
+          fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.8" stroke-linejoin="round" />
+    <path d="M 250 1085 C 248 1045, 252 1015, 262 1018 C 272 1022, 268 1055, 262 1085 Z" fill="#FDA4AF" />
+    <path d="M 165 1130 C 160 1085, 195 1065, 232 1065 C 270 1065, 305 1085, 300 1130 C 305 1165, 285 1185, 232 1185 C 180 1185, 160 1165, 165 1130 Z"
+          fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.8" stroke-linejoin="round" />
+    <circle cx="208" cy="1125" r="5.5" fill="#1E1E1E" />
+    <circle cx="258" cy="1125" r="5.5" fill="#1E1E1E" />
+    <ellipse cx="192" cy="1142" rx="9" ry="6" fill="#FB7185" opacity="0.85" />
+    <ellipse cx="272" cy="1142" rx="9" ry="6" fill="#FB7185" opacity="0.85" />
+    <path d="M 226 1140 Q 233 1150 240 1140" fill="#F43F5E" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+    <ellipse cx="196" cy="1178" rx="14" ry="10" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.2" />
+    <ellipse cx="270" cy="1178" rx="14" ry="10" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.2" />
+  </g>
+
+  <!-- RIGHT: CUTE BROWN BEAR -->
+  <g id="bearGroup">
+    <circle cx="704" cy="1088" r="26" fill="#BA8759" stroke="#1E1E1E" stroke-width="4.8" />
+    <circle cx="704" cy="1088" r="14" fill="#8D5B36" />
+    <circle cx="802" cy="1088" r="26" fill="#BA8759" stroke="#1E1E1E" stroke-width="4.8" />
+    <circle cx="802" cy="1088" r="14" fill="#8D5B36" />
+    <path d="M 678 1135 C 670 1090, 710 1070, 754 1070 C 800 1070, 838 1090, 830 1135 C 835 1170, 815 1188, 754 1188 C 695 1188, 672 1170, 678 1135 Z"
+          fill="#BA8759" stroke="#1E1E1E" stroke-width="4.8" stroke-linejoin="round" />
+    <ellipse cx="754" cy="1152" rx="24" ry="16" fill="#F3DFC8" stroke="#1E1E1E" stroke-width="3.5" />
+    <path d="M 748 1145 L 760 1145 Q 754 1152 748 1145 Z" fill="#1E1E1E" />
+    <path d="M 754 1149 L 754 1158" stroke="#1E1E1E" stroke-width="3" stroke-linecap="round" />
+    <circle cx="725" cy="1126" r="5.5" fill="#1E1E1E" />
+    <circle cx="783" cy="1126" r="5.5" fill="#1E1E1E" />
+    <ellipse cx="706" cy="1144" rx="9" ry="6" fill="#FB7185" opacity="0.85" />
+    <ellipse cx="802" cy="1144" rx="9" ry="6" fill="#FB7185" opacity="0.85" />
+    <ellipse cx="715" cy="1178" rx="14" ry="10" fill="#BA8759" stroke="#1E1E1E" stroke-width="4.2" />
+    <ellipse cx="792" cy="1178" rx="14" ry="10" fill="#BA8759" stroke="#1E1E1E" stroke-width="4.2" />
+  </g>
+
+  <!-- PINK "YES" BUTTON -->
+  <g id="yesButtonGraphics">
+    <rect
+      x="102"
+      y="1170"
+      width="376"
+      height="120"
+      rx="60"
+      ry="60"
+      fill="#FFAEC0"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+    />
+    <text x="290" y="1248" font-family="'Patrick Hand', 'Fredoka', 'Comic Sans MS', cursive, sans-serif" font-weight="bold" font-size="64" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      Yes
+    </text>
+  </g>
+
+  <!-- BLUE/LAVENDER "NO" BUTTON -->
+  <g id="noButtonGraphics">
+    <rect
+      x="526"
+      y="1170"
+      width="376"
+      height="120"
+      rx="60"
+      ry="60"
+      fill="#B9C6FF"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+    />
+    <text x="714" y="1248" font-family="'Patrick Hand', 'Fredoka', 'Comic Sans MS', cursive, sans-serif" font-weight="bold" font-size="64" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      No
+    </text>
+  </g>
+</svg>

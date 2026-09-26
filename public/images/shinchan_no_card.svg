@@ -1,0 +1,370 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="100%" height="100%">
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.06" />
+    </filter>
+    <filter id="stickerShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.14" />
+    </filter>
+  </defs>
+
+  <!-- Background: Cozy warm cream/beige -->
+  <rect width="1000" height="1500" fill="#FBF5EA" />
+
+  <!-- ========================================== -->
+  <!-- 1. DOODLES & AMBIENT DECORATIONS           -->
+  <!-- ========================================== -->
+
+  <!-- Top-Left Anger Mark (💢) -->
+  <g transform="translate(130, 95) scale(0.9)">
+    <path d="M 0 15 Q 18 18 36 0 M 36 0 Q 33 22 54 22 M 54 22 Q 33 28 36 48 M 36 48 Q 18 28 0 35"
+          fill="none" stroke="#EF4444" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 12 6 L 42 36 M 42 6 L 12 36" stroke="#EF4444" stroke-width="6.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Top-Left Hatch Marks (\ \) -->
+  <line x1="88" y1="210" x2="114" y2="195" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="86" y1="238" x2="116" y2="218" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Top-Right Anger Mark (💢) -->
+  <g transform="translate(815, 60) scale(0.95)">
+    <path d="M 0 15 Q 18 18 36 0 M 36 0 Q 33 22 54 22 M 54 22 Q 33 28 36 48 M 36 48 Q 18 28 0 35"
+          fill="none" stroke="#EF4444" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 12 6 L 42 36 M 42 6 L 12 36" stroke="#EF4444" stroke-width="6.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Top-Right Hatch Marks (//) -->
+  <line x1="895" y1="180" x2="920" y2="160" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="900" y1="210" x2="925" y2="190" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- Left Side Doodles beside center box -->
+  <path d="M 82 460 C 82 478 98 494 116 494 C 98 494 82 510 82 528 C 82 510 66 494 48 494 C 66 494 82 478 82 460 Z"
+        fill="none" stroke="#1E1E1E" stroke-width="4.5" />
+  <path d="M 84 625 C 84 605, 62 595, 54 610 C 45 595, 24 605, 24 625 C 24 650, 54 670, 54 670 C 54 670, 84 650, 84 625 Z"
+        fill="none" stroke="#FB7185" stroke-width="4.5" transform="rotate(-15 54 625)" />
+  <line x1="58" y1="745" x2="84" y2="732" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="58" y1="780" x2="84" y2="767" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 68 890 C 68 905 82 918 96 918 C 82 918 68 932 68 946 C 68 932 54 918 40 918 C 54 918 68 905 68 890 Z"
+        fill="none" stroke="#1E1E1E" stroke-width="4.5" />
+
+  <!-- Right Side Doodles beside center box -->
+  <g transform="translate(900, 480) scale(0.85)">
+    <path d="M 0 15 Q 18 18 36 0 M 36 0 Q 33 22 54 22 M 54 22 Q 33 28 36 48 M 36 48 Q 18 28 0 35"
+          fill="none" stroke="#EF4444" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 12 6 L 42 36 M 42 6 L 12 36" stroke="#EF4444" stroke-width="6" stroke-linecap="round" />
+  </g>
+  <line x1="935" y1="675" x2="908" y2="695" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="938" y1="708" x2="911" y2="728" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 954 800 C 954 780, 932 770, 924 785 C 915 770, 894 780, 894 800 C 894 825, 924 845, 924 845 C 924 845, 954 825, 954 800 Z"
+        fill="none" stroke="#FB7185" stroke-width="4.5" transform="rotate(15 924 800)" />
+  <path d="M 940 920 C 940 934 952 946 966 946 C 952 946 940 958 940 972 C 940 958 928 946 914 946 C 928 946 940 934 940 920 Z"
+        fill="none" stroke="#1E1E1E" stroke-width="4.5" />
+
+  <!-- Bottom Doodles (Left & Right of Cat) -->
+  <line x1="88" y1="1220" x2="114" y2="1205" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <line x1="84" y1="1255" x2="110" y2="1240" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- ========================================== -->
+  <!-- 2. TOP SPEECH BUBBLE CLOUD                 -->
+  <!-- ========================================== -->
+  <g filter="url(#softShadow)">
+    <path
+      d="M 170 140
+         Q 235 90 330 110
+         Q 425 75 530 100
+         Q 635 78 720 115
+         Q 815 85 860 170
+         Q 895 245 850 310
+         Q 885 360 815 385
+         Q 710 410 605 380
+         Q 490 415 385 382
+         Q 275 412 185 365
+         Q 95 315 125 240
+         Q 90 165 170 140 Z"
+      fill="#ECE5FF"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+
+    <!-- Text Line 1: Seriously? -->
+    <text x="500" y="195" font-family="'Patrick Hand', 'Fredoka', 'Comic Sans MS', cursive, sans-serif" font-weight="bold" font-size="68" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      Seriously?
+    </text>
+
+    <!-- Pink Brush Highlight behind "How dare you?" -->
+    <path d="M 215 258 Q 500 248 785 262 Q 500 278 215 258 Z" fill="#FFC1D2" opacity="0.85" />
+    <!-- Text Line 2: How dare you? -->
+    <text x="500" y="275" font-family="'Patrick Hand', 'Fredoka', 'Comic Sans MS', cursive, sans-serif" font-weight="bold" font-size="62" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      How dare you?
+    </text>
+
+    <!-- Text Line 3: > H-mph? < -->
+    <text x="500" y="345" font-family="'Patrick Hand', 'Fredoka', 'Comic Sans MS', cursive, sans-serif" font-weight="bold" font-size="54" fill="#1E1E1E" text-anchor="middle" letter-spacing="2">
+      &gt; H-mph? &lt;
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 3. CENTER BOX WITH ANGRY SHINCHAN STICKER  -->
+  <!-- ========================================== -->
+  <!-- Outer Hand-drawn Black Frame -->
+  <rect
+    x="128"
+    y="480"
+    width="744"
+    height="535"
+    rx="36"
+    ry="36"
+    fill="#FFFFFF"
+    stroke="#1E1E1E"
+    stroke-width="5.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Inner Lavender Stitched Dashed Line -->
+  <rect
+    x="146"
+    y="498"
+    width="708"
+    height="499"
+    rx="24"
+    ry="24"
+    fill="none"
+    stroke="#C8B6FF"
+    stroke-width="4.5"
+    stroke-dasharray="14 10"
+  />
+
+  <!-- Steam Puff Clouds / Anger Lines above Shinchan inside box -->
+  <!-- Left Steam Cloud -->
+  <g transform="translate(265, 540) scale(0.9)">
+    <path d="M 20 40 C 5 40, 0 25, 15 15 C 10 0, 30 -5, 45 5 C 60 -5, 75 10, 68 25 C 80 35, 70 50, 50 48"
+          fill="none" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" />
+    <line x1="75" y1="45" x2="90" y2="52" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="70" y1="55" x2="85" y2="65" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+  <!-- Right Steam Cloud -->
+  <g transform="translate(640, 535) scale(0.9)">
+    <path d="M 20 40 C 5 40, 0 25, 15 15 C 10 0, 30 -5, 45 5 C 60 -5, 75 10, 68 25 C 80 35, 70 50, 50 48"
+          fill="none" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" />
+    <line x1="12" y1="48" x2="-2" y2="56" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+    <line x1="16" y1="58" x2="2" y2="68" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+
+  <!-- ANGRY SHINCHAN STICKER (Centered at x=500, y=745) -->
+  <g id="shinchanAngrySticker" filter="url(#stickerShadow)">
+    <!-- White Die-Cut Sticker Outline -->
+    <path
+      d="M 390 580
+         C 420 540, 580 540, 610 580
+         C 645 615, 680 660, 690 710
+         C 700 760, 770 780, 770 820
+         C 770 870, 710 900, 695 915
+         L 305 915
+         C 290 900, 230 870, 230 820
+         C 230 780, 300 760, 310 710
+         C 320 660, 355 615, 390 580 Z"
+      fill="#FFFFFF"
+      stroke="#FFFFFF"
+      stroke-width="24"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+
+    <!-- Shinchan Red Shirt & Clenched Fists -->
+    <!-- Red Shirt -->
+    <path
+      d="M 315 815
+         C 315 800, 345 780, 420 780
+         L 580 780
+         C 655 780, 685 800, 685 815
+         L 690 900
+         L 310 900 Z"
+      fill="#DC2626"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+      stroke-linejoin="round"
+    />
+
+    <!-- Left Clenched Fist -->
+    <circle cx="395" cy="850" r="26" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="5" />
+    <path d="M 380 840 Q 395 832 410 840" fill="none" stroke="#1E1E1E" stroke-width="3.5" />
+    <path d="M 380 852 Q 395 845 410 852" fill="none" stroke="#1E1E1E" stroke-width="3.5" />
+    <path d="M 382 864 Q 395 858 408 864" fill="none" stroke="#1E1E1E" stroke-width="3.5" />
+    <!-- Left Forearm -->
+    <path d="M 360 885 L 380 865" stroke="#1E1E1E" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Right Clenched Fist -->
+    <circle cx="605" cy="850" r="26" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="5" />
+    <path d="M 590 840 Q 605 832 620 840" fill="none" stroke="#1E1E1E" stroke-width="3.5" />
+    <path d="M 590 852 Q 605 845 620 852" fill="none" stroke="#1E1E1E" stroke-width="3.5" />
+    <path d="M 592 864 Q 605 858 618 864" fill="none" stroke="#1E1E1E" stroke-width="3.5" />
+    <!-- Right Forearm -->
+    <path d="M 640 885 L 620 865" stroke="#1E1E1E" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Shinchan Angry Head -->
+    <!-- Hair Base -->
+    <path
+      d="M 385 645
+         C 375 580, 420 540, 500 540
+         C 580 540, 625 580, 615 645
+         C 605 675, 575 680, 560 670
+         C 530 665, 415 665, 385 645 Z"
+      fill="#1E1E1E"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+      stroke-linejoin="round"
+    />
+
+    <!-- Wide Flushed Angry Face -->
+    <path
+      d="M 380 645
+         C 285 665, 235 735, 280 810
+         C 320 860, 410 870, 500 870
+         C 590 870, 680 860, 720 810
+         C 765 735, 715 665, 620 645
+         C 590 635, 410 635, 380 645 Z"
+      fill="#FDC9AF"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+      stroke-linejoin="round"
+    />
+
+    <!-- Angry Red Flush across Forehead and Cheeks -->
+    <ellipse cx="500" cy="670" rx="140" ry="60" fill="#EF4444" opacity="0.45" />
+    <ellipse cx="340" cy="760" rx="45" ry="30" fill="#EF4444" opacity="0.5" />
+    <ellipse cx="660" cy="760" rx="45" ry="30" fill="#EF4444" opacity="0.5" />
+
+    <!-- Angry Forehead Comic Anger Symbol (💢) -->
+    <g transform="translate(485, 600) scale(0.65)">
+      <path d="M 0 15 Q 18 18 36 0 M 36 0 Q 33 22 54 22 M 54 22 Q 33 28 36 48 M 36 48 Q 18 28 0 35"
+            fill="none" stroke="#B91C1C" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M 12 6 L 42 36 M 42 6 L 12 36" stroke="#B91C1C" stroke-width="6.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Forehead Angry Vein Wrinkles -->
+    <path d="M 455 640 Q 470 630 480 645" fill="none" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M 545 640 Q 530 630 520 645" fill="none" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- Ears on Left and Right -->
+    <path d="M 285 735 C 260 740, 260 775, 285 780" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="4.5" />
+    <path d="M 715 735 C 740 740, 740 775, 715 780" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="4.5" />
+
+    <!-- Sharp Angry V-Angled Eyebrows -->
+    <path d="M 370 685 L 475 640" stroke="#1E1E1E" stroke-width="20" stroke-linecap="round" />
+    <path d="M 630 685 L 525 640" stroke="#1E1E1E" stroke-width="20" stroke-linecap="round" />
+
+    <!-- Intense Glaring Eyes -->
+    <!-- Left Eye -->
+    <ellipse cx="440" cy="710" rx="30" ry="26" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.5" />
+    <ellipse cx="446" cy="710" rx="16" ry="16" fill="#1E1E1E" />
+    <circle cx="442" cy="705" r="5" fill="#FFFFFF" />
+
+    <!-- Right Eye -->
+    <ellipse cx="560" cy="710" rx="30" ry="26" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.5" />
+    <ellipse cx="554" cy="710" rx="16" ry="16" fill="#1E1E1E" />
+    <circle cx="550" cy="705" r="5" fill="#FFFFFF" />
+
+    <!-- Nose -->
+    <path d="M 495 735 Q 500 742 505 735" fill="none" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- Furrowed Gritted Angry Mouth -->
+    <path
+      d="M 430 780
+         Q 465 795 500 770
+         Q 535 795 570 780"
+      fill="none"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path d="M 475 805 Q 500 812 525 805" fill="none" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 4. BOTTOM POUTING KITTEN & "GO BACK"       -->
+  <!-- ========================================== -->
+
+  <!-- CUTE POUTING WHITE KITTEN -->
+  <g id="kittenGroup">
+    <!-- Red Anger Mark above Left Ear -->
+    <g transform="translate(100, 1080) scale(0.8)">
+      <path d="M 0 15 Q 18 18 36 0 M 36 0 Q 33 22 54 22 M 54 22 Q 33 28 36 48 M 36 48 Q 18 28 0 35"
+            fill="none" stroke="#EF4444" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M 12 6 L 42 36 M 42 6 L 12 36" stroke="#EF4444" stroke-width="6" stroke-linecap="round" />
+    </g>
+
+    <!-- Kitten Left Ear -->
+    <path d="M 160 1170 L 140 1105 Q 165 1100 195 1135 Z"
+          fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.8" stroke-linejoin="round" />
+    <path d="M 162 1160 L 150 1118 Q 168 1115 188 1138 Z" fill="#FDA4AF" />
+
+    <!-- Kitten Right Ear -->
+    <path d="M 290 1170 L 330 1105 Q 335 1130 305 1150 Z"
+          fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.8" stroke-linejoin="round" />
+    <path d="M 292 1162 L 320 1118 Q 324 1135 302 1150 Z" fill="#FDA4AF" />
+
+    <!-- Kitten Head -->
+    <ellipse cx="245" cy="1185" rx="88" ry="62"
+             fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.8" />
+
+    <!-- Angry Furrowed Eyebrows (\ /) -->
+    <line x1="202" y1="1170" x2="225" y2="1182" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="288" y1="1170" x2="265" y2="1182" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Angry Cat Eyes -->
+    <circle cx="218" cy="1186" r="5" fill="#1E1E1E" />
+    <circle cx="272" cy="1186" r="5" fill="#1E1E1E" />
+
+    <!-- Blush Cheeks -->
+    <ellipse cx="195" cy="1198" rx="10" ry="6" fill="#FB7185" opacity="0.85" />
+    <ellipse cx="295" cy="1198" rx="10" ry="6" fill="#FB7185" opacity="0.85" />
+
+    <!-- Pouting Mouth & Nose -->
+    <path d="M 245 1192 L 245 1197" stroke="#1E1E1E" stroke-width="3" stroke-linecap="round" />
+    <path d="M 238 1200 Q 245 1195 252 1200" fill="none" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- Two White Paws resting on Button -->
+    <ellipse cx="195" cy="1232" rx="18" ry="12" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.2" />
+    <ellipse cx="305" cy="1232" rx="18" ry="12" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="4.2" />
+
+    <!-- Whiskers / Hatch beside kitten -->
+    <line x1="398" y1="1158" x2="425" y2="1175" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" />
+    <line x1="405" y1="1185" x2="435" y2="1195" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- PINK "GO BACK" BUTTON PILL -->
+  <g id="goBackButtonGraphics">
+    <!-- Main Pink Button Body -->
+    <rect
+      x="220"
+      y="1225"
+      width="560"
+      height="125"
+      rx="62.5"
+      ry="62.5"
+      fill="#FFAEC0"
+      stroke="#1E1E1E"
+      stroke-width="5.5"
+    />
+    <!-- White Gloss Arc Highlight -->
+    <path d="M 255 1250 Q 300 1238 360 1240" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.75" />
+
+    <!-- Text: Go back -->
+    <text x="500" y="1308" font-family="'Patrick Hand', 'Fredoka', 'Comic Sans MS', cursive, sans-serif" font-weight="bold" font-size="64" fill="#1E1E1E" text-anchor="middle" letter-spacing="1">
+      Go back
+    </text>
+
+    <!-- Floating Pink Heart beside Button -->
+    <path d="M 830 1235 C 830 1215, 810 1205, 802 1220 C 794 1205, 774 1215, 774 1235 C 774 1258, 802 1275, 802 1275 C 802 1275, 830 1258, 830 1235 Z"
+          fill="#FB7185" transform="rotate(15 802 1235)" />
+
+    <!-- Curled Hand-Drawn Return Arrow -->
+    <path d="M 855 1285 C 840 1295, 805 1315, 820 1345 C 832 1365, 865 1360, 850 1335 C 845 1325, 820 1330, 805 1325"
+          fill="none" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+    <path d="M 808 1315 L 802 1325 L 812 1335" fill="none" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

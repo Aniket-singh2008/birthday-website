@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="100%" height="100%">
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.08" />
+    </filter>
+    <filter id="stickerShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.14" />
+    </filter>
+  </defs>
+
+  <!-- Background: Cozy warm cream/beige -->
+  <rect width="1000" height="1500" fill="#FFF4EA" />
+
+  <!-- ========================================== -->
+  <!-- 1. AMBIENT CONFETTI & DOODLES              -->
+  <!-- ========================================== -->
+
+  <!-- Top-Left Balloons & Confetti -->
+  <!-- Floating Pink Heart Balloon -->
+  <g transform="translate(90, 240)">
+    <path d="M 50 40 C 50 15, 20 0, 0 25 C -20 0, -50 15, -50 40 C -50 75, 0 110, 0 110 C 0 110, 50 75, 50 40 Z"
+          fill="#FFAEC0" stroke="#1E1E1E" stroke-width="5" stroke-linejoin="round" />
+    <!-- Balloon Highlight -->
+    <path d="M -30 35 C -30 20, -15 15, 0 22" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" />
+    <!-- Knot -->
+    <polygon points="-6,110 6,110 0,118" fill="#FFAEC0" stroke="#1E1E1E" stroke-width="3.5" />
+    <!-- String -->
+    <path d="M 0 118 Q 15 150 5 180" fill="none" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Floating Yellow Round Balloon -->
+  <g transform="translate(155, 280)">
+    <ellipse cx="0" cy="0" rx="42" ry="48" fill="#FDE047" stroke="#1E1E1E" stroke-width="5" />
+    <!-- Highlight -->
+    <path d="M -22 -20 A 25 30 0 0 1 0 -35" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" />
+    <!-- Knot -->
+    <polygon points="-5,48 5,48 0,55" fill="#FDE047" stroke="#1E1E1E" stroke-width="3.5" />
+    <!-- String & Bow -->
+    <path d="M 0 55 Q -10 90 -20 125 Q -10 140 -25 155" fill="none" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" />
+    <!-- Bow tie at junction -->
+    <ellipse cx="-20" cy="140" rx="14" ry="8" fill="#FFAEC0" stroke="#1E1E1E" stroke-width="3.5" transform="rotate(-20 -20 140)" />
+    <ellipse cx="-20" cy="140" rx="8" ry="14" fill="#FFAEC0" stroke="#1E1E1E" stroke-width="3.5" transform="rotate(-20 -20 140)" />
+  </g>
+
+  <!-- Top-Left Floating Heart (♥) -->
+  <path d="M 145 68 C 145 48, 122 38, 112 55 C 102 38, 80 48, 80 68 C 80 95, 112 118, 112 118 C 112 118, 145 95, 145 68 Z"
+        fill="#FFAEC0" stroke="#1E1E1E" stroke-width="4.5" transform="rotate(-15 112 70)" />
+
+  <!-- Confetti ribbons & specks on Left -->
+  <path d="M 60 140 Q 80 160 65 180" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+  <circle cx="58" cy="385" r="7" fill="#FACC15" />
+  <path d="M 75 490 Q 60 520 90 540" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+  <circle cx="62" cy="580" r="7" fill="#F472B6" />
+  <path d="M 85 640 C 85 620, 65 610, 56 625 C 48 610, 28 620, 28 640 C 28 665, 56 685, 56 685 C 56 685, 85 665, 85 640 Z"
+        fill="#FFAEC0" stroke="#1E1E1E" stroke-width="4" transform="rotate(-15 56 645)" />
+  <path d="M 52 710 Q 68 730 54 750" fill="none" stroke="#FACC15" stroke-width="7" stroke-linecap="round" />
+
+  <!-- Top-Right Stars, Hearts & Confetti -->
+  <!-- 5-pointed Yellow Star -->
+  <g transform="translate(895, 110) scale(0.9)">
+    <polygon points="0,-40 12,-12 40,-12 18,6 26,34 0,18 -26,34 -18,6 -40,-12 -12,-12"
+             fill="#FEF08A" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+  </g>
+  <!-- Pink Confetti Streamer -->
+  <path d="M 760 50 Q 775 75 750 95" fill="none" stroke="#FDA4AF" stroke-width="8" stroke-linecap="round" />
+  <path d="M 915 200 Q 890 220 905 240" fill="none" stroke="#FDA4AF" stroke-width="8" stroke-linecap="round" />
+  <!-- Heart Outline -->
+  <path d="M 910 295 C 910 270, 878 260, 868 280 C 858 260, 825 270, 825 295 C 825 328, 868 355, 868 355 C 868 355, 910 328, 910 295 Z"
+        fill="#FFAEC0" stroke="#1E1E1E" stroke-width="4.8" transform="rotate(15 868 300)" />
+  <!-- Yellow 5-pointed Star on Right -->
+  <g transform="translate(915, 410) scale(0.85)">
+    <polygon points="0,-40 12,-12 40,-12 18,6 26,34 0,18 -26,34 -18,6 -40,-12 -12,-12"
+             fill="#FEF08A" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+  </g>
+  <path d="M 890 500 Q 875 520 890 535" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+  <path d="M 935 565 Q 920 580 940 595" fill="none" stroke="#FACC15" stroke-width="7" stroke-linecap="round" />
+  <!-- 5-pointed Star on Lower Right -->
+  <g transform="translate(925, 680) scale(0.85)">
+    <polygon points="0,-40 12,-12 40,-12 18,6 26,34 0,18 -26,34 -18,6 -40,-12 -12,-12"
+             fill="#FEF08A" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+  </g>
+  <path d="M 940 815 Q 925 835 940 855" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+  <path d="M 878 930 C 878 915, 862 908, 856 918 C 850 908, 834 915, 834 930 C 834 946, 856 960, 856 960 C 856 960, 878 946, 878 930 Z"
+        fill="#FFAEC0" stroke="#1E1E1E" stroke-width="4" transform="rotate(15 856 935)" />
+
+  <!-- ========================================== -->
+  <!-- 2. TOP "HAPPY BIRTHDAY" BANNER             -->
+  <!-- ========================================== -->
+
+  <!-- Golden Crown at Top Center -->
+  <g transform="translate(500, 50)" filter="url(#softShadow)">
+    <path d="M -38 18 L -48 -15 L -16 -4 L 0 -24 L 16 -4 L 48 -15 L 38 18 Z"
+          fill="#FACC15" stroke="#1E1E1E" stroke-width="5" stroke-linejoin="round" />
+    <circle cx="0" cy="5" r="4.5" fill="#EF4444" />
+    <circle cx="-22" cy="7" r="3.5" fill="#3B82F6" />
+    <circle cx="22" cy="7" r="3.5" fill="#3B82F6" />
+    <!-- Radiating dashes above crown -->
+    <line x1="-58" y1="-8" x2="-70" y2="-16" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="-36" y1="-32" x2="-44" y2="-44" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="0" y1="-42" x2="0" y2="-56" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="36" y1="-32" x2="44" y2="-44" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="58" y1="-8" x2="70" y2="-16" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  </g>
+
+  <!-- "HAPPY" Text (Candy Pink Bubble Letters) -->
+  <g filter="url(#softShadow)" font-family="'Fredoka', 'Patrick Hand', 'Comic Sans MS', cursive, sans-serif" font-weight="900" font-size="124" text-anchor="middle">
+    <!-- Black Outer Thick Stroke -->
+    <text x="500" y="185" fill="#FFAEC0" stroke="#1E1E1E" stroke-width="20" stroke-linejoin="round" letter-spacing="4">
+      Happy
+    </text>
+    <!-- Candy Pink Fill -->
+    <text x="500" y="185" fill="#FFAEC0" letter-spacing="4">
+      Happy
+    </text>
+    <!-- White Inner Gloss Highlights -->
+    <text x="496" y="181" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" letter-spacing="4" opacity="0.8">
+      Happy
+    </text>
+  </g>
+
+  <!-- "BIRTHDAY" Text (Golden Yellow Bubble Letters) -->
+  <g filter="url(#softShadow)" font-family="'Fredoka', 'Patrick Hand', 'Comic Sans MS', cursive, sans-serif" font-weight="900" font-size="132" text-anchor="middle">
+    <!-- Black Outer Thick Stroke -->
+    <text x="500" y="325" fill="#FDE047" stroke="#1E1E1E" stroke-width="22" stroke-linejoin="round" letter-spacing="2">
+      Birthday
+    </text>
+    <!-- Golden Yellow Fill -->
+    <text x="500" y="325" fill="#FDE047" letter-spacing="2">
+      Birthday
+    </text>
+    <!-- White Inner Gloss Highlights -->
+    <text x="496" y="321" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" letter-spacing="2" opacity="0.8">
+      Birthday
+    </text>
+  </g>
+
+  <!-- Delicate Curved Doodles with Little Heart below Birthday -->
+  <path d="M 370 345 Q 430 330 465 338" fill="none" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 480 335 C 480 325, 492 320, 500 330 C 508 320, 520 325, 520 335 C 520 348, 500 360, 500 360 C 500 360, 480 348, 480 335 Z"
+        fill="#FFAEC0" stroke="#1E1E1E" stroke-width="3.5" />
+  <path d="M 535 338 Q 570 330 630 345" fill="none" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- ========================================== -->
+  <!-- 3. CENTER SCALLOPED PHOTO FRAME            -->
+  <!-- ========================================== -->
+  <g filter="url(#softShadow)">
+    <!-- Outer Scalloped Pink Wavy Frame -->
+    <path
+      id="scallopedFrameOuter"
+      d="M 230 400
+         Q 330 380 430 395 Q 500 405 570 395 Q 670 380 770 400
+         Q 815 440 825 500 Q 840 580 825 660 Q 815 740 825 820 Q 840 900 825 980 Q 815 1040 770 1080
+         Q 670 1100 570 1085 Q 500 1075 430 1085 Q 330 1100 230 1080
+         Q 185 1040 175 980 Q 160 900 175 820 Q 185 740 175 660 Q 160 580 175 500 Q 185 440 230 400 Z"
+      fill="#FFFBF6"
+      stroke="#FF9EAF"
+      stroke-width="12"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+    <!-- Hand-drawn black contour -->
+    <path
+      d="M 230 400
+         Q 330 380 430 395 Q 500 405 570 395 Q 670 380 770 400
+         Q 815 440 825 500 Q 840 580 825 660 Q 815 740 825 820 Q 840 900 825 980 Q 815 1040 770 1080
+         Q 670 1100 570 1085 Q 500 1075 430 1085 Q 330 1100 230 1080
+         Q 185 1040 175 980 Q 160 900 175 820 Q 185 740 175 660 Q 160 580 175 500 Q 185 440 230 400 Z"
+      fill="none"
+      stroke="#1E1E1E"
+      stroke-width="5"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+
+    <!-- Inner Dashed Stitch Line -->
+    <path
+      id="scallopedFrameStitch"
+      d="M 245 420
+         Q 335 402 430 415 Q 500 422 570 415 Q 665 402 755 420
+         Q 795 455 805 510 Q 818 580 805 660 Q 795 735 805 810 Q 818 890 805 965 Q 795 1020 755 1055
+         Q 665 1075 570 1062 Q 500 1055 430 1062 Q 335 1075 245 1055
+         Q 205 1020 195 965 Q 182 890 195 810 Q 205 735 195 660 Q 182 580 195 510 Q 205 455 245 420 Z"
+      fill="none"
+      stroke="#FFB6C1"
+      stroke-width="4.5"
+      stroke-dasharray="14 10"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 5. BOTTOM-RIGHT: CAKE & PRESENT            -->
+  <!-- ========================================== -->
+  <!-- Birthday Cake with 3 Candles -->
+  <g id="birthdayCakeGroup" filter="url(#stickerShadow)" transform="translate(640, 1140)">
+    <!-- Cake Plate -->
+    <ellipse cx="140" cy="235" rx="135" ry="32" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="5" />
+
+    <!-- Cake Base (2 Tiers) -->
+    <!-- Bottom Tier -->
+    <path d="M 35 155 L 35 210 Q 140 250 245 210 L 245 155 Z"
+          fill="#FFFBF5" stroke="#1E1E1E" stroke-width="5" stroke-linejoin="round" />
+    <!-- Pink Wavy Drip Frosting on Bottom Tier -->
+    <path d="M 35 170
+             Q 60 190 85 170 Q 115 195 140 170 Q 170 195 195 170 Q 220 190 245 170
+             L 245 155 Q 140 135 35 155 Z"
+          fill="#FF8DA1" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+
+    <!-- Colorful Sprinkles on Frosting -->
+    <rect x="75" y="160" width="8" height="4" rx="2" fill="#38BDF8" transform="rotate(25 75 160)" />
+    <rect x="135" y="155" width="8" height="4" rx="2" fill="#FACC15" transform="rotate(-30 135 155)" />
+    <rect x="195" y="160" width="8" height="4" rx="2" fill="#4ADE80" transform="rotate(45 195 160)" />
+
+    <!-- 3 Candles -->
+    <!-- Candle 1 (Left) -->
+    <g transform="translate(90, 85)">
+      <rect x="0" y="25" width="14" height="45" rx="3" fill="#FFE4E6" stroke="#1E1E1E" stroke-width="3.5" />
+      <path d="M 0 38 L 14 34 M 0 54 L 14 50" stroke="#FF8DA1" stroke-width="3.5" />
+      <line x1="7" y1="25" x2="7" y2="15" stroke="#1E1E1E" stroke-width="2.5" />
+      <!-- Flame -->
+      <path d="M 7 15 Q 14 5 7 -4 Q 0 5 7 15 Z" fill="#FACC15" stroke="#EA580C" stroke-width="2" />
+      <circle cx="7" cy="6" r="3" fill="#FEF08A" />
+    </g>
+
+    <!-- Candle 2 (Center) -->
+    <g transform="translate(133, 75)">
+      <rect x="0" y="25" width="14" height="45" rx="3" fill="#E0F2FE" stroke="#1E1E1E" stroke-width="3.5" />
+      <path d="M 0 38 L 14 34 M 0 54 L 14 50" stroke="#38BDF8" stroke-width="3.5" />
+      <line x1="7" y1="25" x2="7" y2="15" stroke="#1E1E1E" stroke-width="2.5" />
+      <!-- Flame -->
+      <path d="M 7 15 Q 14 5 7 -4 Q 0 5 7 15 Z" fill="#FACC15" stroke="#EA580C" stroke-width="2" />
+      <circle cx="7" cy="6" r="3" fill="#FEF08A" />
+    </g>
+
+    <!-- Candle 3 (Right) -->
+    <g transform="translate(176, 85)">
+      <rect x="0" y="25" width="14" height="45" rx="3" fill="#FEF08A" stroke="#1E1E1E" stroke-width="3.5" />
+      <path d="M 0 38 L 14 34 M 0 54 L 14 50" stroke="#F59E0B" stroke-width="3.5" />
+      <line x1="7" y1="25" x2="7" y2="15" stroke="#1E1E1E" stroke-width="2.5" />
+      <!-- Flame -->
+      <path d="M 7 15 Q 14 5 7 -4 Q 0 5 7 15 Z" fill="#FACC15" stroke="#EA580C" stroke-width="2" />
+      <circle cx="7" cy="6" r="3" fill="#FEF08A" />
+    </g>
+  </g>
+
+  <!-- Blue Gift Box with Red Ribbon Beside Cake -->
+  <g id="giftBoxGroup" filter="url(#stickerShadow)" transform="translate(865, 1260)">
+    <!-- Box Body -->
+    <rect x="0" y="30" width="85" height="85" rx="8" fill="#60A5FA" stroke="#1E1E1E" stroke-width="4.5" />
+    <!-- Box Lid -->
+    <rect x="-5" y="18" width="95" height="20" rx="6" fill="#3B82F6" stroke="#1E1E1E" stroke-width="4.5" />
+    <!-- Red Vertical Ribbon -->
+    <rect x="35" y="18" width="16" height="97" fill="#EF4444" stroke="#1E1E1E" stroke-width="3.5" />
+    <!-- Red Horizontal Ribbon -->
+    <rect x="0" y="65" width="85" height="15" fill="#EF4444" stroke="#1E1E1E" stroke-width="3.5" />
+    <!-- Big Red Bow on Top -->
+    <ellipse cx="28" cy="8" rx="18" ry="12" fill="#EF4444" stroke="#1E1E1E" stroke-width="3.5" transform="rotate(-30 28 8)" />
+    <ellipse cx="58" cy="8" rx="18" ry="12" fill="#EF4444" stroke="#1E1E1E" stroke-width="3.5" transform="rotate(30 58 8)" />
+    <circle cx="43" cy="14" r="8" fill="#DC2626" stroke="#1E1E1E" stroke-width="3.5" />
+  </g>
+
+  <!-- Bottom Doodles -->
+  <path d="M 400 1395 Q 460 1385 490 1392" fill="none" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" />
+  <path d="M 495 1390 C 495 1380, 505 1375, 512 1385 C 519 1375, 529 1380, 529 1390 C 529 1402, 512 1412, 512 1412 C 512 1412, 495 1402, 495 1390 Z"
+        fill="#FFAEC0" stroke="#1E1E1E" stroke-width="3.5" />
+  <path d="M 535 1392 Q 565 1385 625 1395" fill="none" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,340 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Soft shadow filter -->
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.07" />
+    </filter>
+    <filter id="boxShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.12" />
+    </filter>
+
+    <!-- 5-Petal Flower Symbol for Gift Wrap -->
+    <g id="flowerPattern">
+      <circle cx="0" cy="-6" r="3.5" fill="#FFFFFF" opacity="0.9" />
+      <circle cx="6" cy="-2" r="3.5" fill="#FFFFFF" opacity="0.9" />
+      <circle cx="4" cy="5" r="3.5" fill="#FFFFFF" opacity="0.9" />
+      <circle cx="-4" cy="5" r="3.5" fill="#FFFFFF" opacity="0.9" />
+      <circle cx="-6" cy="-2" r="3.5" fill="#FFFFFF" opacity="0.9" />
+      <circle cx="0" cy="0" r="2.2" fill="#FDE047" />
+    </g>
+
+    <!-- Single 3D Lavender Gift Box with Tag & Bow -->
+    <g id="giftBoxUnit">
+      <!-- Shadow -->
+      <ellipse cx="110" cy="190" rx="100" ry="24" fill="#E2D5C7" opacity="0.75" />
+
+      <!-- Left Side Wall -->
+      <path d="M 12 85 L 12 180 L 85 205 L 85 110 Z"
+            fill="#B8A7EA" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+      <!-- Left Wall Ribbon -->
+      <path d="M 40 95 L 40 190 L 57 195 L 57 101 Z" fill="#9884DC" />
+      <!-- Flowers on Left Wall -->
+      <use href="#flowerPattern" x="28" y="125" transform="scale(0.85)" />
+      <use href="#flowerPattern" x="28" y="165" transform="scale(0.85)" />
+      <use href="#flowerPattern" x="70" y="145" transform="scale(0.85)" />
+
+      <!-- Front Right Wall -->
+      <path d="M 85 110 L 85 205 L 208 170 L 208 75 Z"
+            fill="#C9BDFC" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+      <!-- Front Wall Ribbon -->
+      <path d="M 140 95 L 140 188 L 157 183 L 157 90 Z" fill="#9884DC" />
+      <!-- Flowers on Front Wall -->
+      <use href="#flowerPattern" x="110" y="130" />
+      <use href="#flowerPattern" x="112" y="175" />
+      <use href="#flowerPattern" x="175" y="115" />
+      <use href="#flowerPattern" x="178" y="160" />
+
+      <!-- Box Lid (Top Overhang) -->
+      <!-- Left Lid Edge -->
+      <path d="M 8 70 L 8 92 L 85 116 L 85 94 Z"
+            fill="#B09EE5" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+      <!-- Front Lid Edge -->
+      <path d="M 85 94 L 85 116 L 212 80 L 212 58 Z"
+            fill="#C3B5F6" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+      <!-- Top Lid Surface -->
+      <path d="M 8 70 L 85 94 L 212 58 L 135 34 Z"
+            fill="#D4C8FD" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+
+      <!-- Top Lid Ribbons -->
+      <!-- Ribbon across left-to-right -->
+      <path d="M 68 52 L 78 55 L 152 76 L 142 73 Z" fill="#9884DC" />
+      <path d="M 42 78 L 52 82 L 178 45 L 168 42 Z" fill="#9884DC" />
+      <!-- Flowers on Lid -->
+      <use href="#flowerPattern" x="35" y="72" transform="scale(0.8)" />
+      <use href="#flowerPattern" x="175" y="55" transform="scale(0.8)" />
+
+      <!-- Hanging Heart Tag -->
+      <g transform="translate(100, 85) rotate(12)">
+        <!-- Tag String -->
+        <line x1="8" y1="0" x2="8" y2="16" stroke="#1E1E1E" stroke-width="3" />
+        <!-- White Tag -->
+        <path d="M 0 16 L 16 16 L 20 48 L -4 48 Z" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="3.5" stroke-linejoin="round" />
+        <circle cx="8" cy="22" r="2.5" fill="#E2D5C7" />
+        <!-- Pink Heart on Tag -->
+        <path d="M 8 36 C 8 31, 2 28, 2 33 C 2 38, 8 43, 8 43 C 8 43, 14 38, 14 33 C 14 28, 8 31, 8 36 Z"
+              fill="#FF8DA1" stroke="#E11D48" stroke-width="1.5" />
+      </g>
+
+      <!-- Ribbon Bow on Top -->
+      <g transform="translate(110, 48)">
+        <!-- Left Loop -->
+        <path d="M 0 0 C -25 -25, -60 -15, -45 10 C -30 25, -5 5, 0 0 Z"
+              fill="#B4A1ED" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+        <!-- Left Loop Fold -->
+        <path d="M -22 -4 Q -35 -2 -32 8" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+
+        <!-- Right Loop -->
+        <path d="M 0 0 C 25 -25, 60 -15, 45 10 C 30 25, 5 5, 0 0 Z"
+              fill="#B4A1ED" stroke="#1E1E1E" stroke-width="4.5" stroke-linejoin="round" />
+        <!-- Right Loop Fold -->
+        <path d="M 22 -4 Q 35 -2 32 8" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+
+        <!-- Center Knot -->
+        <ellipse cx="0" cy="2" rx="10" ry="9" fill="#9884DC" stroke="#1E1E1E" stroke-width="4" />
+      </g>
+    </g>
+  </defs>
+
+  <!-- Background: Warm soft cream/beige -->
+  <rect width="1000" height="1000" fill="#FEF6EE" />
+
+  <!-- ========================================== -->
+  <!-- 1. TOP SPEECH BUBBLE & SURROUNDING DOODLES -->
+  <!-- ========================================== -->
+
+  <!-- Top-Center Cloud Speech Bubble -->
+  <g filter="url(#softGlow)">
+    <!-- Cloud Background -->
+    <path
+      d="M 270 95
+         Q 330 35 430 45
+         Q 500 20 570 45
+         Q 670 35 730 95
+         Q 800 135 770 215
+         Q 800 295 720 325
+         Q 630 355 500 340
+         Q 370 355 280 325
+         Q 200 295 230 215
+         Q 200 135 270 95 Z"
+      fill="#FFF0F3"
+      stroke="#FFB6C1"
+      stroke-width="5"
+      stroke-dasharray="14 10"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+
+    <!-- Small Pink Heart atop the Cloud -->
+    <path d="M 500 38 C 500 24, 482 18, 482 28 C 482 36, 500 44, 500 44 C 500 44, 518 36, 518 28 C 518 18, 500 24, 500 38 Z"
+          fill="#FF8DA1" stroke="#1E1E1E" stroke-width="3" />
+
+    <!-- Text: "Here is your" -->
+    <text x="500" y="165" font-family="'Patrick Hand', 'Fredoka', 'Comic Sans MS', cursive, sans-serif" font-weight="900" font-size="78" fill="#231815" text-anchor="middle" letter-spacing="2">
+      Here is your
+    </text>
+
+    <!-- Text: "gifts" -->
+    <text x="500" y="275" font-family="'Patrick Hand', 'Fredoka', 'Comic Sans MS', cursive, sans-serif" font-weight="900" font-size="88" fill="#231815" text-anchor="middle" letter-spacing="3">
+      gifts
+    </text>
+
+    <!-- Radiating Yellow Doodles around "gifts" -->
+    <!-- Left of gifts (3 rays) -->
+    <line x1="340" y1="205" x2="365" y2="195" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" />
+    <line x1="330" y1="230" x2="355" y2="230" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" />
+    <line x1="340" y1="255" x2="365" y2="265" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" />
+    <!-- Right of gifts (3 rays) -->
+    <line x1="660" y1="195" x2="635" y2="205" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" />
+    <line x1="670" y1="230" x2="645" y2="230" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" />
+    <line x1="660" y1="265" x2="635" y2="255" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" />
+  </g>
+
+  <!-- Top-Left Rays beside left Shinchan -->
+  <line x1="125" y1="85" x2="148" y2="105" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" />
+  <line x1="102" y1="115" x2="128" y2="125" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" />
+  <line x1="115" y1="152" x2="140" y2="148" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Top-Right Golden Star (✦) beside right Shinchan -->
+  <path d="M 885 70 Q 885 95 860 95 Q 885 95 885 120 Q 885 95 910 95 Q 885 95 885 70 Z"
+        fill="#FDE047" stroke="#F59E0B" stroke-width="2.5" />
+
+  <!-- ========================================== -->
+  <!-- 2. SHINCHAN CHARACTERS (LEFT & RIGHT)      -->
+  <!-- ========================================== -->
+
+  <!-- LEFT SHINCHAN (Leaning over, mouth open, waving) -->
+  <g id="leftShinchanGroup">
+    <!-- Red Shirt -->
+    <path d="M 12 360 C 10 330, 40 315, 95 315 L 180 320 C 210 320, 225 345, 215 375 L 15 385 Z"
+          fill="#E11D48" stroke="#1E1E1E" stroke-width="5" stroke-linejoin="round" />
+
+    <!-- Chubby Head -->
+    <path d="M 15 310
+             C 5 260, 45 195, 115 195
+             C 175 195, 235 235, 240 280
+             C 245 325, 205 355, 155 355
+             C 105 355, 30 355, 15 310 Z"
+          fill="#FDC9AF" stroke="#1E1E1E" stroke-width="5.5" stroke-linejoin="round" />
+
+    <!-- Hair on Left & Top -->
+    <path d="M 22 280 C 15 220, 45 195, 105 195 C 135 195, 145 205, 135 215 C 90 220, 45 250, 40 290 Z"
+          fill="#1E1E1E" stroke="#1E1E1E" stroke-width="4.5" />
+
+    <!-- Big Bold Eyebrows -->
+    <path d="M 45 240 Q 80 215 115 235" fill="none" stroke="#1E1E1E" stroke-width="14" stroke-linecap="round" />
+    <path d="M 135 230 Q 165 215 195 235" fill="none" stroke="#1E1E1E" stroke-width="14" stroke-linecap="round" />
+
+    <!-- Big Sparkling Eyes -->
+    <ellipse cx="85" cy="275" rx="22" ry="28" fill="#1E1E1E" />
+    <circle cx="80" cy="265" r="9" fill="#FFFFFF" />
+    <circle cx="95" cy="285" r="4.5" fill="#FFFFFF" />
+
+    <ellipse cx="152" cy="268" rx="22" ry="28" fill="#1E1E1E" />
+    <circle cx="147" cy="258" r="9" fill="#FFFFFF" />
+    <circle cx="162" cy="278" r="4.5" fill="#FFFFFF" />
+
+    <!-- Blushing Cheeks -->
+    <ellipse cx="48" cy="320" rx="14" ry="8" fill="#FB7185" opacity="0.8" />
+    <line x1="42" y1="315" x2="48" y2="325" stroke="#E11D48" stroke-width="2" />
+    <line x1="50" y1="315" x2="56" y2="325" stroke="#E11D48" stroke-width="2" />
+
+    <ellipse cx="198" cy="295" rx="14" ry="8" fill="#FB7185" opacity="0.8" />
+    <line x1="192" y1="290" x2="198" y2="300" stroke="#E11D48" stroke-width="2" />
+    <line x1="200" y1="290" x2="206" y2="300" stroke="#E11D48" stroke-width="2" />
+
+    <!-- Round Excited Open Mouth (O) -->
+    <ellipse cx="172" cy="320" rx="16" ry="20" fill="#881337" stroke="#1E1E1E" stroke-width="4.5" />
+    <ellipse cx="172" cy="326" rx="11" ry="8" fill="#FDA4AF" />
+
+    <!-- Waving Left Hand -->
+    <path d="M 235 240 Q 255 220 270 235 Q 260 255 245 255 Z" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="4" />
+  </g>
+
+  <!-- RIGHT SHINCHAN (Smiling eyes, peace sign ✌️, floating heart) -->
+  <g id="rightShinchanGroup">
+    <!-- Floating Pink Heart above Right Shinchan -->
+    <path d="M 955 210 C 955 198, 940 192, 936 200 C 932 192, 917 198, 917 210 C 917 222, 936 230, 936 230 C 936 230, 955 222, 955 210 Z"
+          fill="#FF8DA1" stroke="#1E1E1E" stroke-width="3" transform="rotate(15 936 215)" />
+
+    <!-- Red Shirt -->
+    <path d="M 760 360 C 765 330 815 325 870 325 L 945 335 L 920 395 L 755 385 Z"
+          fill="#E11D48" stroke="#1E1E1E" stroke-width="5" stroke-linejoin="round" />
+
+    <!-- Chubby Head -->
+    <path d="M 760 310
+             C 745 255, 790 220, 855 220
+             C 930 220, 965 265, 965 315
+             C 965 350, 925 365, 875 365
+             C 825 365, 770 350, 760 310 Z"
+          fill="#FDC9AF" stroke="#1E1E1E" stroke-width="5.5" stroke-linejoin="round" />
+
+    <!-- Hair on Right & Top -->
+    <path d="M 810 225 C 865 215, 935 220, 950 265 C 935 250, 895 240, 835 245 Z"
+          fill="#1E1E1E" stroke="#1E1E1E" stroke-width="4.5" />
+
+    <!-- Thick Eyebrows -->
+    <path d="M 795 240 Q 825 228 855 242" fill="none" stroke="#1E1E1E" stroke-width="14" stroke-linecap="round" />
+    <path d="M 885 245 Q 915 235 945 255" fill="none" stroke="#1E1E1E" stroke-width="14" stroke-linecap="round" />
+
+    <!-- Happy Closed Smiling Eyes (⌒ ⌒) -->
+    <path d="M 808 275 Q 830 262 850 276" fill="none" stroke="#1E1E1E" stroke-width="5" stroke-linecap="round" />
+    <path d="M 878 284 Q 902 280 922 295" fill="none" stroke="#1E1E1E" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Cute Blush Cheeks -->
+    <ellipse cx="795" cy="295" rx="14" ry="8" fill="#FB7185" opacity="0.8" />
+    <line x1="789" y1="290" x2="795" y2="300" stroke="#E11D48" stroke-width="2" />
+    <line x1="797" y1="290" x2="803" y2="300" stroke="#E11D48" stroke-width="2" />
+
+    <ellipse cx="905" cy="318" rx="14" ry="8" fill="#FB7185" opacity="0.8" />
+
+    <!-- Cute Smiling Cat-like Mouth (3) -->
+    <path d="M 810 330 Q 820 320 812 342" fill="none" stroke="#1E1E1E" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Hand with Peace Sign (✌️) -->
+    <g transform="translate(885, 335)">
+      <!-- Peace fingers -->
+      <path d="M 12 18 L 8 0 Q 15 -2 18 2 L 18 16" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="4" stroke-linejoin="round" />
+      <path d="M 22 18 L 26 -2 Q 33 0 32 6 L 27 18" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="4" stroke-linejoin="round" />
+      <!-- Fist -->
+      <ellipse cx="18" cy="24" rx="14" ry="12" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="4" />
+    </g>
+    <!-- Left Hand Resting -->
+    <ellipse cx="765" cy="335" rx="12" ry="14" fill="#FDC9AF" stroke="#1E1E1E" stroke-width="4" />
+  </g>
+
+  <!-- Golden Star between Shinchan & Boxes -->
+  <g transform="translate(525, 395) scale(0.65)">
+    <polygon points="0,-35 10,-10 35,-10 15,6 22,30 0,16 -22,30 -15,6 -35,-10 -10,-10"
+             fill="#FDE047" stroke="#F59E0B" stroke-width="3" stroke-linejoin="round" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 3. THE 4 GIFT BOXES (ROW ACROSS CENTER)    -->
+  <!-- ========================================== -->
+
+  <!-- GIFT BOX 1 (Leftmost: x: 30) -->
+  <g id="giftBox1Group" transform="translate(30, 420)">
+    <use href="#giftBoxUnit" />
+  </g>
+
+  <!-- GIFT BOX 2 (Second from Left: x: 268) -->
+  <g id="giftBox2Group" transform="translate(268, 420)">
+    <use href="#giftBoxUnit" />
+  </g>
+
+  <!-- GIFT BOX 3 (Third: x: 504) -->
+  <g id="giftBox3Group" transform="translate(504, 420)">
+    <use href="#giftBoxUnit" />
+  </g>
+
+  <!-- GIFT BOX 4 (Rightmost: x: 736) -->
+  <g id="giftBox4Group" transform="translate(736, 420)">
+    <use href="#giftBoxUnit" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 4. BOTTOM CONFETTI, STARS & HEARTS         -->
+  <!-- ========================================== -->
+  <!-- Yellow 5-pointed star on lower right -->
+  <g transform="translate(905, 650) scale(0.65)">
+    <polygon points="0,-35 10,-10 35,-10 15,6 22,30 0,16 -22,30 -15,6 -35,-10 -10,-10"
+             fill="#FDE047" stroke="#F59E0B" stroke-width="3" stroke-linejoin="round" />
+  </g>
+
+  <!-- Blue confetti dash marks in lower right -->
+  <line x1="915" y1="785" x2="945" y2="805" stroke="#38BDF8" stroke-width="6.5" stroke-linecap="round" />
+  <line x1="915" y1="825" x2="950" y2="825" stroke="#38BDF8" stroke-width="6.5" stroke-linecap="round" />
+  <line x1="910" y1="860" x2="938" y2="845" stroke="#38BDF8" stroke-width="6.5" stroke-linecap="round" />
+
+  <!-- Blue confetti dash marks in lower center -->
+  <line x1="600" y1="695" x2="615" y2="715" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" />
+  <line x1="585" y1="718" x2="600" y2="728" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Purple Ribbon Curl in center -->
+  <path d="M 525 745 Q 545 735 558 752" fill="none" stroke="#A78BFA" stroke-width="7" stroke-linecap="round" />
+
+  <!-- Yellow Star on lower left -->
+  <g transform="translate(70, 835) scale(0.65)">
+    <polygon points="0,-35 10,-10 35,-10 15,6 22,30 0,16 -22,30 -15,6 -35,-10 -10,-10"
+             fill="#FDE047" stroke="#F59E0B" stroke-width="3" stroke-linejoin="round" />
+  </g>
+
+  <!-- Yellow rays above lower left star -->
+  <line x1="145" y1="700" x2="165" y2="720" stroke="#FDE047" stroke-width="6" stroke-linecap="round" />
+  <line x1="115" y1="720" x2="135" y2="735" stroke="#FDE047" stroke-width="6" stroke-linecap="round" />
+  <line x1="112" y1="758" x2="138" y2="752" stroke="#FDE047" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Pink Ribbon Curls and hearts on bottom -->
+  <path d="M 160 895 Q 170 920 185 930" fill="none" stroke="#FDA4AF" stroke-width="7" stroke-linecap="round" />
+  <path d="M 470 945 Q 495 935 505 955" fill="none" stroke="#A78BFA" stroke-width="7" stroke-linecap="round" />
+
+  <!-- Little hearts floating at bottom -->
+  <path d="M 305 895 C 305 885, 292 880, 292 888 C 292 895, 305 905, 305 905 C 305 905, 318 895, 318 888 C 318 880, 305 885, 305 895 Z"
+        fill="#FF8DA1" stroke="#E11D48" stroke-width="2" />
+
+  <path d="M 535 880 C 535 870, 522 865, 522 873 C 522 880, 535 890, 535 890 C 535 890, 548 880, 548 873 C 548 865, 535 870, 535 880 Z"
+        fill="#FF8DA1" stroke="#E11D48" stroke-width="2" />
+
+  <circle cx="700" cy="920" r="7" fill="#FDA4AF" />
+  <circle cx="838" cy="875" r="5" fill="#FF8DA1" />
+</svg>

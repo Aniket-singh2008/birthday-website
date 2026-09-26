@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Filter for subtle organic hand-drawn warmth -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#EAB308" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- 1. Warm cream/peach-yellow base background -->
+  <rect width="720" height="1280" fill="#FEE7BA" />
+
+  <!-- 2. Top Scalloped Cloud Border (White with delicate light-brown outline) -->
+  <path
+    d="M-20,-20 L740,-20 L740,45
+       Q700,75 660,45
+       Q620,75 580,45
+       Q540,75 500,45
+       Q460,75 420,45
+       Q380,75 340,45
+       Q300,75 260,45
+       Q220,75 180,45
+       Q140,75 100,45
+       Q60,75 20,45
+       Q-10,70 -20,45 Z"
+    fill="#FFFFFF"
+    stroke="#C99863"
+    stroke-width="3.5"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+
+  <!-- 3. Bottom Scalloped Cloud Border (White with delicate light-brown outline) -->
+  <path
+    d="M-20,1300 L740,1300 L740,1235
+       Q700,1205 660,1235
+       Q620,1205 580,1235
+       Q540,1205 500,1235
+       Q460,1205 420,1235
+       Q380,1205 340,1235
+       Q300,1205 260,1235
+       Q220,1205 180,1235
+       Q140,1205 100,1235
+       Q60,1205 20,1235
+       Q-10,1210 -20,1235 Z"
+    fill="#FFFFFF"
+    stroke="#C99863"
+    stroke-width="3.5"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+
+  <!-- 4. Scattered Hand-Drawn Doodle Hearts with soft dark contour -->
+
+  <!-- Top-left Pink Heart -->
+  <g transform="translate(108, 142) rotate(-14)">
+    <path
+      d="M0,-8 C-7,-18 -22,-12 -22,2 C-22,14 -4,22 0,26 C4,22 22,14 22,2 C22,-12 7,-18 0,-8 Z"
+      fill="#FFA5B5"
+      stroke="#4A3425"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Upper-right Blue Heart -->
+  <g transform="translate(552, 228) rotate(15)">
+    <path
+      d="M0,-9 C-9,-20 -26,-14 -26,3 C-26,17 -5,26 0,31 C5,26 26,17 26,3 C26,-14 9,-20 0,-9 Z"
+      fill="#93D5F6"
+      stroke="#4A3425"
+      stroke-width="3.2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Mid-left Blue Heart -->
+  <g transform="translate(145, 436) rotate(-10)">
+    <path
+      d="M0,-7 C-7,-15 -20,-10 -20,2 C-20,12 -3,20 0,23 C3,20 20,12 20,2 C20,-10 7,-15 0,-7 Z"
+      fill="#93D5F6"
+      stroke="#4A3425"
+      stroke-width="2.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Center-right Pink Heart -->
+  <g transform="translate(506, 478) rotate(-6)">
+    <path
+      d="M0,-9 C-8,-19 -24,-13 -24,3 C-24,16 -4,24 0,28 C4,24 24,16 24,3 C24,-13 8,-19 0,-9 Z"
+      fill="#FFA5B5"
+      stroke="#4A3425"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Lower-left Yellow Heart -->
+  <g transform="translate(90, 715) rotate(-18)">
+    <path
+      d="M0,-10 C-9,-22 -28,-15 -28,4 C-28,19 -5,29 0,34 C5,29 28,19 28,4 C28,-15 9,-22 0,-10 Z"
+      fill="#FDD468"
+      stroke="#4A3425"
+      stroke-width="3.2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Lower-right Yellow Heart -->
+  <g transform="translate(630, 690) rotate(14)">
+    <path
+      d="M0,-8 C-8,-17 -22,-12 -22,2 C-22,14 -4,22 0,26 C4,22 22,14 22,2 C22,-12 8,-17 0,-8 Z"
+      fill="#FDD468"
+      stroke="#4A3425"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Bottom-center Blue Heart -->
+  <g transform="translate(494, 894) rotate(8)">
+    <path
+      d="M0,-7 C-7,-15 -20,-10 -20,2 C-20,12 -3,20 0,23 C3,20 20,12 20,2 C20,-10 7,-15 0,-7 Z"
+      fill="#93D5F6"
+      stroke="#4A3425"
+      stroke-width="2.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- 5. Four-pointed White Sparkle Stars -->
+  <!-- Top Left Sparkle -->
+  <path d="M265,95 Q265,110 250,110 Q265,110 265,125 Q265,110 280,110 Q265,110 265,95 Z" fill="#FFFFFF" opacity="0.95" />
+  <!-- Top Right Sparkle -->
+  <path d="M660,93 Q660,108 645,108 Q660,108 660,123 Q660,108 675,108 Q660,108 660,93 Z" fill="#FFFFFF" opacity="0.95" />
+  <!-- Upper Mid Sparkle -->
+  <path d="M200,232 Q200,250 182,250 Q200,250 200,268 Q200,250 218,250 Q200,250 200,232 Z" fill="#FFFFFF" opacity="0.95" />
+  <!-- Center Sparkle -->
+  <path d="M380,398 Q380,415 363,415 Q380,415 380,432 Q380,415 397,415 Q380,415 380,398 Z" fill="#FFFFFF" opacity="0.95" />
+  <!-- Mid-Lower Left Sparkle -->
+  <path d="M125,585 Q125,600 110,600 Q125,600 125,615 Q125,600 140,600 Q125,600 125,585 Z" fill="#FFFFFF" opacity="0.95" />
+  <!-- Lower Mid Sparkle -->
+  <path d="M358,686 Q358,700 344,700 Q358,700 358,714 Q358,700 372,700 Q358,700 358,686 Z" fill="#FFFFFF" opacity="0.95" />
+  <!-- Bottom Left Sparkle -->
+  <path d="M105,862 Q105,875 92,875 Q105,875 105,888 Q105,875 118,875 Q105,875 105,862 Z" fill="#FFFFFF" opacity="0.95" />
+
+  <!-- 6. Pastel Confetti Dots -->
+  <!-- Pink dots -->
+  <ellipse cx="608" cy="88" rx="8" ry="12" fill="#FFA5B5" transform="rotate(-15 608 88)" opacity="0.9" />
+  <ellipse cx="108" cy="492" rx="7" ry="10" fill="#FFA5B5" transform="rotate(25 108 492)" opacity="0.9" />
+  <ellipse cx="380" cy="510" rx="6" ry="9" fill="#FFA5B5" transform="rotate(-20 380 510)" opacity="0.9" />
+  <ellipse cx="616" cy="766" rx="8" ry="12" fill="#FFA5B5" transform="rotate(20 616 766)" opacity="0.9" />
+
+  <!-- Sky blue dots -->
+  <ellipse cx="142" cy="178" rx="6" ry="9" fill="#93D5F6" transform="rotate(15 142 178)" opacity="0.9" />
+  <ellipse cx="452" cy="170" rx="7" ry="10" fill="#93D5F6" transform="rotate(-30 452 170)" opacity="0.9" />
+  <ellipse cx="516" cy="602" rx="6" ry="10" fill="#93D5F6" transform="rotate(10 516 602)" opacity="0.9" />
+  <ellipse cx="232" cy="910" rx="7" ry="10" fill="#93D5F6" transform="rotate(-15 232 910)" opacity="0.9" />
+
+  <!-- Sunshine yellow/amber dots -->
+  <ellipse cx="225" cy="326" rx="6" ry="9" fill="#FDD468" transform="rotate(10 225 326)" opacity="0.9" />
+  <ellipse cx="655" cy="336" rx="6" ry="9" fill="#FDD468" transform="rotate(-15 655 336)" opacity="0.9" />
+  <ellipse cx="410" cy="812" rx="6" ry="9" fill="#FDD468" transform="rotate(20 410 812)" opacity="0.9" />
+</svg>

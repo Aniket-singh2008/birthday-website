@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-pastel-yellow: #FFF9DB;
+    --color-pastel-cream: #FFFEF7;
+    --color-lavender: #E8DDFF;
+    --color-lavender-dark: #C4B5FD;
+    --color-purple-accent: #9333EA;
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #FFFDF5;
+    overflow-x: hidden;
+    touch-action: manipulation;
+  }
+}
+
+/* Typography styles */
+.font-handwritten {
+  font-family: 'Patrick Hand', cursive, sans-serif;
+}
+
+.font-display {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-lilita {
+  font-family: 'Lilita One', 'Fredoka', cursive, sans-serif;
+}
+
+.font-body {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Yellow and White vertical stripes background */
+.bg-stripes-reference {
+  background-color: #FEF08A;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #FDE047 0px,
+    #FDE047 34px,
+    #FFFFFF 34px,
+    #FFFFFF 68px
+  );
+}
+
+.bg-stripes-yellow {
+  background-color: #FFFBEA;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #FDF3A7 0px,
+    #FDF3A7 28px,
+    #FFFDF7 28px,
+    #FFFDF7 56px
+  );
+}
+
+.bg-stripes-yellow-subtle {
+  background-color: #FFFDF5;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #FEF9C3 0px,
+    #FEF9C3 24px,
+    #FFFFFF 24px,
+    #FFFFFF 48px
+  );
+}
+
+/* Torn paper edge effect */
+.torn-paper-edge-top {
+  mask-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+  mask-size: 20px 20px;
+  mask-repeat: repeat-x;
+}
+
+/* Washi tape effect */
+.washi-tape-lavender {
+  background: rgba(216, 180, 254, 0.75);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(168, 85, 247, 0.4);
+  border-right: 2px dashed rgba(168, 85, 247, 0.4);
+}
+
+.washi-tape-yellow {
+  background: rgba(254, 240, 138, 0.85);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(234, 179, 8, 0.4);
+  border-right: 2px dashed rgba(234, 179, 8, 0.4);
+}
+
+.washi-tape-pink {
+  background: rgba(251, 207, 232, 0.8);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(244, 114, 182, 0.4);
+  border-right: 2px dashed rgba(244, 114, 182, 0.4);
+}
+
+/* Paper card shadow */
+.scrapbook-shadow {
+  box-shadow: 0 10px 25px -5px rgba(120, 80, 160, 0.12), 0 8px 10px -6px rgba(120, 80, 160, 0.08);
+}
+
+.scrapbook-shadow-lg {
+  box-shadow: 0 20px 30px -10px rgba(147, 51, 234, 0.15), 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+/* Scalloped edge styling */
+.scallop-border-lavender {
+  background-image: radial-gradient(circle at 10px 0px, transparent 9px, #DDD6FE 10px);
+  background-size: 20px 14px;
+  background-repeat: repeat-x;
+}
+
+/* Smooth keyframes */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(2deg);
+  }
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-6deg); }
+  75% { transform: rotate(6deg); }
+}
+
+/* 5-Second Heart Intro Animation */
+@keyframes heartFloatUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.25) rotate(0deg);
+  }
+  12% {
+    opacity: 0.95;
+    transform: translate3d(calc(var(--drift-x) * 0.15), calc(var(--drift-y) * 0.15), 0) scale(1.22) rotate(calc(var(--rot) * 0.4));
+  }
+  25% {
+    opacity: 0.95;
+    transform: translate3d(calc(var(--drift-x) * 0.3), calc(var(--drift-y) * 0.3), 0) scale(1) rotate(calc(var(--rot) * 0.7));
+  }
+  75% {
+    opacity: 0.75;
+    transform: translate3d(calc(var(--drift-x) * 0.8), calc(var(--drift-y) * 0.8), 0) scale(0.95) rotate(var(--rot));
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--drift-x), var(--drift-y), 0) scale(0.6) rotate(var(--rot));
+  }
+}
+
+.animate-heart-float {
+  animation: heartFloatUp var(--duration, 2.8s) cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulseSoft 2.5s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.6s ease-in-out infinite;
+}
