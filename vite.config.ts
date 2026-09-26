@@ -8,8 +8,12 @@ export default defineConfig(() => {
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(import.meta.dirname || '.', '.'),
       },
+    },
+    preview: {
+      port: 3000,
+      host: '0.0.0.0',
     },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.

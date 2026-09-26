@@ -34,6 +34,15 @@
   font-family: 'Outfit', sans-serif;
 }
 
+/* Passcode Screen Background */
+.bg-passcode {
+  background-color: #FFFDF5;
+  background-image: url('/passcode_bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* Yellow and White vertical stripes background */
 .bg-stripes-reference {
   background-color: #FEF08A;

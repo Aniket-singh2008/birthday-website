@@ -11,6 +11,8 @@
  * upload photos directly from browser as well as configuring in birthdayConfig.ts.
  */
 
+import { setItemPersistent } from './dbStorage';
+
 const STORAGE_KEY_PRIMARY_PHOTO = 'memories_primary_photo_permanent_v2';
 const STORAGE_KEY_PRIMARY_LOCKED = 'memories_primary_photo_locked_v2';
 const STORAGE_KEY_CHIN_CHIN_PHOTO = 'memories_chin_chin_photo_permanent_v1';
@@ -48,10 +50,10 @@ export function getPermanentChinChinPhoto(): PhotoStorageState {
  */
 export async function savePermanentChinChinPhoto(photoDataUrl: string): Promise<boolean> {
   try {
-    localStorage.setItem(STORAGE_KEY_CHIN_CHIN_PHOTO, photoDataUrl);
-    localStorage.setItem(STORAGE_KEY_CHIN_CHIN_LOCKED, 'true');
+    await setItemPersistent(STORAGE_KEY_CHIN_CHIN_PHOTO, photoDataUrl);
+    await setItemPersistent(STORAGE_KEY_CHIN_CHIN_LOCKED, 'true');
 
-    // Supabase connector ready
+    // Supabase sync (if configured)
     await syncToSupabaseStorage('chin_chin', photoDataUrl);
 
     return true;
@@ -105,8 +107,8 @@ export function getPermanentSpecialPagePhoto(): PhotoStorageState {
  */
 export async function savePermanentSpecialPagePhoto(photoDataUrl: string): Promise<boolean> {
   try {
-    localStorage.setItem(STORAGE_KEY_SPECIAL_PAGE_PHOTO, photoDataUrl);
-    localStorage.setItem(STORAGE_KEY_SPECIAL_PAGE_LOCKED, 'true');
+    await setItemPersistent(STORAGE_KEY_SPECIAL_PAGE_PHOTO, photoDataUrl);
+    await setItemPersistent(STORAGE_KEY_SPECIAL_PAGE_LOCKED, 'true');
     await syncToSupabaseStorage('special_page', photoDataUrl);
     return true;
   } catch (err) {
@@ -162,8 +164,8 @@ export async function savePermanentPrimaryPhoto(photoDataUrl: string): Promise<b
       return false;
     }
 
-    localStorage.setItem(STORAGE_KEY_PRIMARY_PHOTO, photoDataUrl);
-    localStorage.setItem(STORAGE_KEY_PRIMARY_LOCKED, 'true');
+    await setItemPersistent(STORAGE_KEY_PRIMARY_PHOTO, photoDataUrl);
+    await setItemPersistent(STORAGE_KEY_PRIMARY_LOCKED, 'true');
 
     // Supabase hook
     await syncToSupabaseStorage('primary', photoDataUrl);
@@ -207,11 +209,11 @@ export function getCustomMemoryBoxPhotos(): Record<number, string> {
   }
 }
 
-export function saveCustomMemoryBoxPhoto(boxId: number, dataUrl: string): void {
+export async function saveCustomMemoryBoxPhoto(boxId: number, dataUrl: string): Promise<void> {
   try {
     const existing = getCustomMemoryBoxPhotos();
     existing[boxId] = dataUrl;
-    localStorage.setItem(STORAGE_KEY_MEMORY_BOXES, JSON.stringify(existing));
+    await setItemPersistent(STORAGE_KEY_MEMORY_BOXES, JSON.stringify(existing));
     syncToSupabaseStorage(`box-${boxId}`, dataUrl).catch(() => {});
   } catch (err) {
     console.error('Failed to save memory box photo:', err);
@@ -231,20 +233,50 @@ export function getPasscodeShinchanPhotos(): { leftImage: string | null; rightIm
   }
 }
 
-export function savePasscodeShinchanPhoto(side: 'left' | 'right', dataUrl: string): void {
+export async function savePasscodeShinchanPhoto(side: 'left' | 'right', dataUrl: string): Promise<void> {
   try {
     const key = side === 'left' ? STORAGE_KEY_SHINCHAN_LEFT : STORAGE_KEY_SHINCHAN_RIGHT;
-    localStorage.setItem(key, dataUrl);
+    await setItemPersistent(key, dataUrl);
   } catch (err) {
     console.error('Failed to save shinchan passcode photo:', err);
   }
 }
 
 /**
- * Prepared connector for Supabase Storage integration.
+ * Supabase Storage integration with automatic fallback.
+ * If VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are configured, syncs images to Supabase bucket.
  */
 async function syncToSupabaseStorage(tag: string, dataUrl: string): Promise<string | null> {
-  // Plug in Supabase Storage client here when credentials are provided:
-  // e.g., supabase.storage.from('memories').upload(...)
+  const supabaseUrl = (import.meta.env.VITE_SUPABASE_URL as string) || '';
+  const supabaseKey = (import.meta.env.VITE_SUPABASE_ANON_KEY as string) || (import.meta.env.VITE_SUPABASE_KEY as string) || '';
+
+  if (!supabaseUrl || !supabaseKey) {
+    return dataUrl;
+  }
+
+  try {
+    const res = await fetch(dataUrl);
+    const blob = await res.blob();
+    const cleanUrl = supabaseUrl.replace(/\/+$/, '');
+    const filename = `${tag}_${Date.now()}.jpg`;
+
+    const uploadRes = await fetch(`${cleanUrl}/storage/v1/object/memories/${filename}`, {
+      method: 'POST',
+      headers: {
+        'apikey': supabaseKey,
+        'Authorization': `Bearer ${supabaseKey}`,
+        'Content-Type': blob.type || 'image/jpeg',
+        'x-upsert': 'true',
+      },
+      body: blob,
+    });
+
+    if (uploadRes.ok) {
+      return `${cleanUrl}/storage/v1/object/public/memories/${filename}`;
+    }
+  } catch {
+    // Graceful fallback to persistent IndexedDB
+  }
+
   return dataUrl;
 }

@@ -19,7 +19,7 @@ export const DecorativeBackground: React.FC<DecorativeBackgroundProps> = ({
     <div
       className={`relative min-h-screen w-full flex flex-col justify-between overflow-x-hidden selection:bg-purple-200 selection:text-purple-900 ${
         isPasscodeScreen
-          ? "bg-[url('/passcode_bg.svg')] bg-cover bg-center bg-no-repeat"
+          ? 'bg-passcode'
           : isSpecialPageScreen
           ? 'bg-[#FAF5EC]'
           : 'bg-stripes-yellow-subtle'
